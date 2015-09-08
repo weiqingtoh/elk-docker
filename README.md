@@ -1,4 +1,19 @@
-# Elasticsearch, Logstash, Kibana (ELK) Docker image
+# Elasticsearch, Logstash, Kibana (ELK) Docker images
+
+The repo contains separate Docker images for the setup of ELK. The containerisation of each tool provides modularity for easy modifications to future logging setups. 
+
+This is still a work in progress and credit goes to the author of the original repo, [Sébastien Pujadas](https://pujadas.net).
+
+To modify, please run the following commands, where `{tool}` is either elasticsearch, logstash or kibana:
+
+```
+cp docker-compose-sample.yml ./{tool}/docker-compose.yml
+cp Dockerfile-sample ./{tool}/Dockerfile
+```
+
+# Original Readme
+
+## Elasticsearch, Logstash, Kibana (ELK) Docker image
 
 [![](https://badge.imagelayers.io/sebp/elk:latest.svg)](https://imagelayers.io/?images=sebp/elk:latest 'Get your own badge on imagelayers.io')
 
